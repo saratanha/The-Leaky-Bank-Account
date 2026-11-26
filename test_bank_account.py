@@ -25,5 +25,4 @@ def test_negative_withdrawal_raises():
 
     with pytest.raises(ValueError):
         account.withdraw(-50)
-
     assert account.getBalance() == 100
